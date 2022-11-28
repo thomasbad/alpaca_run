@@ -14,7 +14,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1024 height=576></canvas>
+      <canvas id="unity-canvas" width=1024 height=768></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -62,9 +62,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/alpaca_run.loader.js";
       var config = {
-        dataUrl: buildUrl + "/alpaca_run.data.br",
-        frameworkUrl: buildUrl + "/alpaca_run.framework.js.br",
-        codeUrl: buildUrl + "/alpaca_run.wasm.br",
+        dataUrl: buildUrl + "/alpaca_run.data",
+        frameworkUrl: buildUrl + "/alpaca_run.framework.js",
+        codeUrl: buildUrl + "/alpaca_run.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Alpaca_RunRun",
@@ -77,7 +77,7 @@
       // Set this to false if you want to decouple this synchronization from
       // happening inside the engine, and you would instead like to size up
       // the canvas DOM size and WebGL render target sizes yourself.
-      config.matchWebGLToCanvasSize = false;
+    config.matchWebGLToCanvasSize = false;
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
